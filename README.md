@@ -1,104 +1,174 @@
-# qrcode_FM
-# Frontend Mentor - QR code component solution
+# QR Code Component
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+A clean and responsive QR code component built as a solution to the [Frontend Mentor QR code component challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-## Table of contents
+## 🚀 Live Demo
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+[View Live Demo](http://localhost:8000) (when running locally)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## 📱 Screenshot
 
-## Overview
+![QR Code Component](./screenshot.jpg)
 
-### Screenshot
+## ✨ Features
 
-![](./screenshot.jpg)
+- **Responsive Design**: Works perfectly on all device sizes
+- **Modern Typography**: Uses Google Fonts (Outfit) for clean, professional text
+- **Accessible**: Proper semantic HTML and alt text for images
+- **Clean Layout**: Centered card design with proper spacing and shadows
+- **Cross-browser Compatible**: Works on all modern browsers
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+## 🛠️ Built With
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- **HTML5**: Semantic markup structure
+- **CSS3**: Modern styling with Flexbox
+- **Google Fonts**: Outfit font family (400 & 700 weights)
+- **Responsive Design**: Mobile-first approach
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+## 🎨 Design Specifications
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+### Typography
+- **Heading**: Outfit Bold, 22px, 120% line height, 0px letter spacing
+- **Body Text**: Outfit Regular, 15px, 140% line height, 0.2px letter spacing
 
-### Links
+### Colors
+- **Background**: #d5e1ef (Light blue-gray)
+- **Card Background**: #ffffff (White)
+- **Heading Text**: #1f314f (Dark blue)
+- **Body Text**: #68778d (Medium gray)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### Layout
+- **Card Dimensions**: 320px × 499px
+- **Border Radius**: 20px
+- **Padding**: 16px
+- **Image Border Radius**: 10px
 
-## My process
+## 📁 Project Structure
 
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
 ```
+qrcode/
+├── index.html          # Main HTML file
+├── style.css           # CSS styles
+├── images/             # Image assets
+│   └── image-qr-code.png
+└── README.md           # Project documentation
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+- A modern web browser
+- Python 3 (for local development server)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd qrcode
+   ```
+
+2. **Start a local development server**
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+3. **Open your browser**
+   Navigate to `http://localhost:8000`
+
+### Alternative Setup Options
+
+- **VS Code Live Server**: Install the Live Server extension and right-click `index.html` → "Open with Live Server"
+- **Direct File**: Simply double-click `index.html` to open in your default browser
+- **Node.js**: Use `npx serve .` if you have Node.js installed
+
+## 💡 Key Learnings
+
+### CSS Flexbox Mastery
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    background-color: #d5e1ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+### Google Fonts Integration
+```html
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+```
+
+### Responsive Image Handling
+```css
+img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Card Component Design
+```css
+.container {
+    text-align: center;
+    background-color: white;
+    width: 320px;
+    padding: 16px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+```
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+## 🎯 Challenges Solved
 
-### Continued development
+1. **Font Loading**: Switched from local font files to Google Fonts for better reliability
+2. **Responsive Design**: Implemented flexible layout that works on all screen sizes
+3. **Typography Matching**: Precisely matched Figma design specifications
+4. **Cross-browser Compatibility**: Ensured consistent appearance across browsers
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+## 🔧 Technical Details
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Box Model**: Used `box-sizing: border-box` for predictable sizing
+- **Font Loading**: Optimized with `preconnect` for faster Google Fonts loading
+- **Semantic HTML**: Proper use of heading hierarchy and alt text
+- **CSS Organization**: Clean, maintainable stylesheet structure
 
-### Useful resources
+## 📱 Browser Support
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+## 🤝 Contributing
 
-## Author
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## 📄 License
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+This project is open source and available under the [MIT License](LICENSE).
 
-## Acknowledgments
+## 👨‍💻 Author
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+**Nabil Roslizar**
+- Frontend Mentor: [@nabilroslizar](https://www.frontendmentor.io/profile/nabilroslizar)
+- GitHub: [@nabilroslizar](https://github.com/nabilroslizar)
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+## 🙏 Acknowledgments
+
+- [Frontend Mentor](https://www.frontendmentor.io/) for providing this amazing challenge
+- [Google Fonts](https://fonts.google.com/) for the beautiful Outfit font family
+- The web development community for inspiration and best practices
+
+---
+
+⭐ **Star this repository if you found it helpful!**
