@@ -8,7 +8,8 @@ A clean and responsive QR code component built as a solution to the [Frontend Me
 
 ## 📱 Screenshot
 
-![QR Code Component](./screenshot.jpg)
+![QR Code Component](./screenshot-desktop.jpg)
+![QR Code Component](./screenshot-mobile.jpg)
 
 ## ✨ Features
 
